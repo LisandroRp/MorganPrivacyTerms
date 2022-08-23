@@ -1,8 +1,14 @@
+html {
+  height: 100%;
+  overflow: hidden;
+}
+
 .body {
   margin: 0;
   padding: 0;
+  height: 100%;
+  overflow: auto;
   padding-bottom: 50px;
-  -webkit-overflow-scrolling: auto;
   background-image: url("./assets/BrickWall.jpg");
 }
   .black-container { 
@@ -24,7 +30,7 @@
   .button-container { 
     width: 100%;
     display: flex;
-    margin-top: 11%;
+    margin-top: 6%;
     flex-wrap: wrap;
     justify-content: space-around;
   }
@@ -52,11 +58,18 @@
 
   @media only screen and (max-width: 768px) {
     /* For mobile phones: */
+    .button-container { 
+      margin-top: 20%;
+    }
+
     .button {
       width: 180px;
       margin-bottom: 20%
     }
     .button-text { 
       font-size: 12px;
+    }
+    .image { 
+      width: 100%
     }
   }
